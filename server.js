@@ -5,13 +5,13 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 var server = require("http").Server(app);
 var io = require("socket.io")(server);
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 var array = [];
 
 io.on("connection", function(socket){
     console.log("Someone connected: " + socket.id);
-    
+
     socket.on("user-register", function(data){
         array.push(
             new User(data.name, data.email, data.telephone)
