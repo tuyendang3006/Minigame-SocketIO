@@ -1,0 +1,6 @@
+#wrapper{width: 600px; margin: auto}
+#information{border:solid 1px gray; margin: 10px; padding: 10px; text-align: center}
+#txtName, #txtEmail, #txtNumeroTelephone{}
+#listUsers{text-align: center}
+.user{border-bottom: solid 1px #eaeaea; padding: 10px}
+.lign1 span{color: blue; font-weight: bold}
